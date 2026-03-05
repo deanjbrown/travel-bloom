@@ -236,41 +236,9 @@ footer a:hover {
   padding-bottom: 0;
 }
 
-/* About us page */
-.about-us-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-}
-
-/* TODO Need to abstract some of these classes */
+/* Style the about us page */
 .about-us {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  padding: 2em;
-  border-radius: 25px;
-  width: 75%;
-  background-color: hsl(0 0% 20% / 0.8);
-}
-
-.contact-us-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-items: center;
-  width: 33%;
-  gap: 0;
-}
-
-.contact-us {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-  padding: 2em;
-  border-radius: 25px;
-  width: 100%;
-  background-color: hsl(0 0% 20% / 0.8);
+  width: 75%; /* About us is just a card with the width set to 50% */
 }
 
 .meet-the-team {
@@ -280,6 +248,7 @@ footer a:hover {
   padding: 2em;
 }
 
+/* Style the team container */
 .team-container {
   display: flex;
   flex-direction: row;
@@ -290,13 +259,11 @@ footer a:hover {
   margin-bottom: 2em;
 }
 
+/* Style the team member cards */
 .team-member {
   display: flex;
   flex-direction: column;
   gap: 1em;
-  padding: 2em;
-  border-radius: 25px;
-  background-color: hsl(0 0% 20% / 0.8);
   text-align: center;
 }
 
@@ -309,7 +276,12 @@ footer a:hover {
   color: #d5d5d5;
 }
 
-/* Contact Us Page */
+/* Style the contact us page */
+.contact-us {
+  width: 40%; /* Contact us is just a card with the width set to 50% */
+}
+
+/* Style the contact us form */
 form {
   display: flex;
   flex-direction: column;
@@ -317,7 +289,7 @@ form {
 
 label {
   /* padding: 2em 0; */
-  font-size: 1.25em;
+  font-size: 1em;
   color: #d5d5d5;
   display: block;
 }
@@ -330,4 +302,9 @@ label {
   border: 1px solid #ccc;
   border-radius: 20px;
   resize: none;
+}
+
+.form-text-input:focus {
+  border-color: #7cb342;
+  outline: none;
 }

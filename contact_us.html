@@ -21,29 +21,35 @@
         </ul>
       </nav>
       <div class="container">
-        <div class="contact-us-container">
-          <div class="contact-us glass">
-            <h1 class="h1xl">Contact Us</h1>
-            <form>
-              <label for="name">Name</label>
-              <input
-                class="form-text-input"
-                type="text"
-                name="name"
-                id="name"
-              />
-              <label for="name">Email Address</label>
-              <input
-                class="form-text-input"
-                type="email"
-                name="email"
-                id="email"
-              />
-              <label for="message">Message</label>
-              <textarea class="form-text-input" rows="10"></textarea>
-            </form>
+        <div class="card glass contact-us">
+          <h1 class="h1xl">Contact Us</h1>
+          <form>
+            <label for="name">Name</label>
+            <input
+              class="form-text-input"
+              type="text"
+              name="name"
+              id="name"
+              required
+            />
+            <label for="name">Email Address</label>
+            <input
+              class="form-text-input"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+            <label for="message">Message</label>
+            <textarea
+              class="form-text-input"
+              rows="8"
+              name="message"
+              id="message"
+              required
+            ></textarea>
             <button class="btn btn-green">Send us a message</button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
