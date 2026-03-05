@@ -1,7 +1,7 @@
 /* Create the font family */
 @font-face {
   font-family: "Manrope";
-  src: url("../fonts/Manrope-VariableFont_wght.ttf") format(truetype);
+  src: url("../fonts/Manrope-VariableFont_wght.ttf") format("truetype");
   font-weight: 200 800;
   font-style: normal;
   font-display: swap;
@@ -238,7 +238,7 @@ footer a:hover {
 
 /* Style the about us page */
 .about-us {
-  width: 75%; /* About us is just a card with the width set to 50% */
+  width: 75%; /* About us is just a card with the width set to 75% */
 }
 
 .meet-the-team {
@@ -278,7 +278,7 @@ footer a:hover {
 
 /* Style the contact us page */
 .contact-us {
-  width: 40%; /* Contact us is just a card with the width set to 50% */
+  width: 40%; /* Contact us is just a card with the width set to 40% */
 }
 
 /* Style the contact us form */

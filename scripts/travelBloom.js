@@ -9,6 +9,6 @@ function setNavHeightProp() {
 
 // Call this function once when the script is loaded and then again anytime the page is resized:
 setNavHeightProp();
-document.addEventListener("resize", setNavHeightProp);
+window.addEventListener("resize", setNavHeightProp);
 
 
