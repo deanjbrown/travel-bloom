@@ -1,0 +1,333 @@
+/* Create the font family */
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-VariableFont_wght.ttf") format(truetype);
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Set the font */
+html {
+  font-family:
+    "Manrope",
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+}
+
+/* Reset the margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General styling */
+h1 {
+  font-weight: 800;
+  color: #d5d5d5;
+}
+
+.h1xl {
+  font-size: 3em;
+}
+
+.pxl {
+  font-size: 1.2em;
+}
+
+p {
+  color: #d5d5d5;
+}
+
+.w-33 {
+  width: 33%;
+}
+
+.text-highlight {
+  color: #8bc34a;
+}
+
+/* Style the background images */
+.bg-image {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-image-1 {
+  background-image: url("../img/background.png");
+}
+
+.bg-image-2 {
+  background-image: url("../img/background2.png");
+}
+
+.bg-image-3 {
+  background-image: url("../img/background3.png");
+}
+
+.glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Style the nav and its elements */
+nav {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0 0% 20% / 0.5);
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  margin-right: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #d5d5d5;
+}
+
+nav a:hover {
+  color: #8bc34a;
+}
+
+/* Style the search input in the nav */
+#searchKeywords {
+  width: clamp(14rem, 28vw, 24rem);
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+#searchKeywords:focus {
+  border-color: #7cb342;
+  outline: none;
+}
+
+/* Style the buttons */
+.btn {
+  align-self: flex-start;
+  width: auto;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.btn-green {
+  background-color: #8bc34a;
+}
+
+.btn-green:hover {
+  background-color: #7cb342;
+}
+
+.btn-grey {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn-grey:hover {
+  background-color: #d5d5d5;
+}
+
+/* Style the different types of container */
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 6em;
+  padding: 2em;
+  align-items: center;
+  flex: 1;
+  /* Setting the height dynamically via CSS custom properties */
+  min-height: calc(100vh - var(--nav-height));
+}
+
+/* TODO => We can use this to replace most of the other sections on the site */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+  border-radius: 25px;
+  background-color: hsl(0 0% 20% / 0.8);
+}
+
+.card .social-links-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.card .social-links-container li a i {
+  color: #d5d5d5;
+  font-size: 3em;
+}
+.card .social-links-container li a i:hover {
+  color: #7cb342;
+}
+
+.hero-element {
+  width: 50%; /* Hero element is just a card with the width set to 50% */
+}
+
+/* Style the footer */
+footer {
+  padding: 1em;
+  margin-top: auto;
+  background-color: #333;
+  color: #d5d5d5;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #d5d5d5;
+}
+
+footer a:hover {
+  color: #7cb342;
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20em;
+  align-items: flex-start;
+  padding: 1em;
+  justify-content: center;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* About us page */
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* TODO Need to abstract some of these classes */
+.about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+  border-radius: 25px;
+  width: 75%;
+  background-color: hsl(0 0% 20% / 0.8);
+}
+
+.contact-us-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  width: 33%;
+  gap: 0;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+  border-radius: 25px;
+  width: 100%;
+  background-color: hsl(0 0% 20% / 0.8);
+}
+
+.meet-the-team {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+}
+
+.team-container {
+  display: flex;
+  flex-direction: row;
+  gap: 4em;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+  border-radius: 25px;
+  background-color: hsl(0 0% 20% / 0.8);
+  text-align: center;
+}
+
+.team-member i {
+  color: #d5d5d5;
+  font-size: 3em;
+}
+
+.team-member h2 {
+  color: #d5d5d5;
+}
+
+/* Contact Us Page */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  /* padding: 2em 0; */
+  font-size: 1.25em;
+  color: #d5d5d5;
+  display: block;
+}
+
+.form-text-input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  margin: 1em 0;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  resize: none;
+}
