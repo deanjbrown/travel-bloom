@@ -29,7 +29,7 @@
           <li><button class="btn btn-grey" id="clearBtn">Clear</button></li>
         </ul>
       </nav>
-      <div class="container">
+      <div class="container" id="container">
         <div class="card glass">
           <ul class="social-links-container">
             <li>
@@ -46,7 +46,8 @@
             </li>
           </ul>
         </div>
-        <div class="card hero-element glass">
+        <div id="search-result-container" class="hidden"></div>
+        <div class="card glass" id="hero-element">
           <h1 class="h1xl">Explore Dream Destinations</h1>
           <p class="pxl">
             The travel recommendation app helps users explore popular travel
@@ -63,8 +64,6 @@
         </div>
       </div>
     </div>
-
-    <!-- TODO This footer needs a little work -->
     <footer>
       <div class="footer-row">
         <div class="footer-col">
@@ -105,6 +104,7 @@
         <p><i>Copyright 2026</i></p>
       </div>
     </footer>
+    <script src="scripts/common.js"></script>
     <script src="scripts/travelBloom.js"></script>
   </body>
 </html>

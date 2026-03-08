@@ -63,15 +63,15 @@ p {
 }
 
 .bg-image-1 {
-  background-image: url("../img/background.png");
+  background-image: url("../img/bg-images/background.png");
 }
 
 .bg-image-2 {
-  background-image: url("../img/background2.png");
+  background-image: url("../img/bg-images/background2.png");
 }
 
 .bg-image-3 {
-  background-image: url("../img/background3.png");
+  background-image: url("../img/bg-images/background3.png");
 }
 
 .glass {
@@ -164,7 +164,7 @@ nav a:hover {
   min-height: calc(100vh - var(--nav-height));
 }
 
-/* TODO => We can use this to replace most of the other sections on the site */
+/* Style the card element */
 .card {
   display: flex;
   flex-direction: column;
@@ -172,6 +172,11 @@ nav a:hover {
   padding: 2em;
   border-radius: 25px;
   background-color: hsl(0 0% 20% / 0.8);
+}
+
+.card h1,
+.card h2 {
+  color: #d5d5d5;
 }
 
 .card .social-links-container {
@@ -190,7 +195,7 @@ nav a:hover {
   color: #7cb342;
 }
 
-.hero-element {
+#hero-element {
   width: 50%; /* Hero element is just a card with the width set to 50% */
 }
 
@@ -272,10 +277,6 @@ footer a:hover {
   font-size: 3em;
 }
 
-.team-member h2 {
-  color: #d5d5d5;
-}
-
 /* Style the contact us page */
 .contact-us {
   width: 40%; /* Contact us is just a card with the width set to 40% */
@@ -288,7 +289,6 @@ form {
 }
 
 label {
-  /* padding: 2em 0; */
   font-size: 1em;
   color: #d5d5d5;
   display: block;
@@ -307,4 +307,25 @@ label {
 .form-text-input:focus {
   border-color: #7cb342;
   outline: none;
+}
+
+/* Hidden class for hiding elements */
+.hidden {
+  display: none !important;
+}
+
+/* Style the search result container */
+#search-result-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-self: flex-start;
+  align-content: start;
+}
+
+#search-result-container .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
